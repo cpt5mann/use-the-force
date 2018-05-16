@@ -63,7 +63,7 @@ oReq.send();
     * Mass
     * Birth year
     * Gender
-  * Leah
+  * Leia (Not LEAH)
     * Height
     * Mass
     * Birth year
