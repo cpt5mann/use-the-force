@@ -68,17 +68,18 @@ var movieData = JSON.parse(this.responseText);
 console.log(movieData.results);
 
  for (var i =0; i<movieData.results.length; i++){
-   var newdiv2= document.createElement("div");
-   var newdiv2b= document.createElement("div");
+  
+  var newdiv2b= document.createElement("div");
+  var newdiv2= document.createElement("div");
    var newdiv2c= document.createElement("div");
-
-   newdiv2.innerHTML= movieData.results[i].title;
-   newdiv2b.innerHTML= movieData.results[i].episode_id;
-   newdiv2c.innerHTML= movieData.results[i].director;
+   
+   newdiv2b.innerHTML= "Episode " + movieData.results[i].episode_id + ":";
+   newdiv2.innerHTML= "Title: " + movieData.results[i].title;
+   newdiv2c.innerHTML="Directed By: " + movieData.results[i].director;
  
-   filmres.appendChild(newdiv2);
    filmres.appendChild(newdiv2b);
-   filmres.appendChild(newdiv2c);
+   filmres.appendChild(newdiv2);
+     filmres.appendChild(newdiv2c);
 
  console.log("movieData", movieData.results[i]);
 }
